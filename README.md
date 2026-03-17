@@ -35,7 +35,25 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 Durante a análise exploratória foram investigados padrões, correlações e distribuições das variáveis, auxiliando na compreensão dos dados e na preparação para modelagem.
 
-*(Sugestão: adicionar gráficos futuramente)*
+## 📊 Informações Gerais do Dataset
+
+Essa etapa permitiu identificar os tipos de dados, presença de valores nulos e estrutura geral do dataset, orientando o processo de pré-processamento.
+
+![Informações Gerais](Imagens/EDA/Informações_Gerais.png)
+
+
+## 📈 Estatísticas Descritivas
+
+As estatísticas descritivas forneceram uma visão geral da distribuição das variáveis numéricas, permitindo identificar possíveis outliers e padrões relevantes.
+
+![Estatísticas Descritivas](Imagens/EDA/Estatísticas_Descritivas.png)
+
+## 🔗 Matriz de Correlação com a Variável Alvo (Churn)
+
+A análise de correlação evidenciou quais variáveis possuem maior relação com o cancelamento de clientes, contribuindo diretamente para a seleção de atributos e interpretação dos modelos.
+
+![Matriz de Correlação](Imagens/EDA/Matriz_Correlação.png)
+
 
 
 
@@ -99,18 +117,21 @@ A análise de importância das variáveis mostra quais fatores mais influenciam 
 Modelo com melhor desempenho geral no projeto, utilizando técnicas de boosting para otimizar a performance e capturar padrões complexos nos dados.
 
 **Matriz de Confusão:**
+
 ![Matriz de Confusão - XGBoost](Imagens/XGBoost/Matriz_Confusao_XGB.png)
 
 A matriz de confusão evidencia excelente desempenho do modelo, com baixíssima taxa de erro e alta precisão na classificação, indicando forte capacidade de identificar corretamente clientes com risco de cancelamento.
 
 
 **Curva ROC:**
+
 ![Curva ROC - XGBoost](Imagens/XGBoost/Curva_ROC_XGB.png)
 
 A curva ROC apresenta desempenho próximo ao ideal, demonstrando elevada capacidade de separação entre as classes e eficiência na detecção de clientes propensos ao churn.
 
 
 **Importância das Variáveis:**
+
 ![Importância das Variáveis - XGBoost](Imagens/XGBoost/Importancia_Variaveis_XGB.png)
 
 A análise de importância das variáveis evidencia os principais fatores que influenciam o cancelamento de clientes. Esses insights permitem direcionar ações estratégicas mais assertivas, priorizando os principais drivers de churn e aumentando a efetividade de campanhas de retenção.
