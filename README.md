@@ -48,21 +48,18 @@ As estatísticas descritivas forneceram uma visão geral da distribuição das v
 
 ![Estatísticas Descritivas](Imagens/EDA/Estatísticas_Descritivas.png)
 
-## 🔗 Matriz de Correlação com a Variável Alvo (Churn)
 
-A análise de correlação evidenciou quais variáveis possuem maior relação com o cancelamento de clientes, contribuindo diretamente para a seleção de atributos e interpretação dos modelos.
+## 🔗 Matriz de Correlação com a Variável Alvo (Churn)
 
 ![Matriz de Correlação](Imagens/EDA/Matriz_Correlação.png)
 
+A matriz de correlação evidencia o grau de associação entre as variáveis numéricas do conjunto de dados e a variável alvo cancelou. Os principais pontos observados foram:
 
- A matriz de correlação evidencia o grau de associação entre as variáveis numéricas do conjunto de dados e a variável alvo cancelou. Os principais pontos observados foram:
+- A variável ligacoes_callcenter apresentou a maior correlação positiva com cancelou (0.574), sugerindo que clientes que mais ligam para o call center têm maior propensão ao cancelamento. Este é um indicativo potencial de insatisfação ou problemas não resolvidos.
 
- A variável ligacoes_callcenter apresentou a maior correlação positiva com cancelou (0.574), sugerindo que clientes que mais ligam para o call center têm maior propensão ao cancelamento. Este é um indicativo potencial de insatisfação ou problemas não resolvidos.
+- As variáveis contrato_Mensal (0.43) e total_gasto (-0.43) também se destacam. Clientes com contrato mensal tendem a cancelar mais, enquanto um maior total gasto está negativamente correlacionado com o cancelamento — o que pode indicar clientes mais engajados ou satisfeitos.
 
- As variáveis contrato_Mensal (0.43) e total_gasto (-0.43) também se destacam. Clientes com contrato mensal tendem a cancelar mais, enquanto um maior total gasto está negativamente correlacionado com o cancelamento — o que pode indicar clientes mais engajados ou satisfeitos.
-
- Variáveis como idade, dias_atraso, e meses_ultima_interacao apresentaram correlações moderadas com a variável alvo, enquanto sexo, frequencia_uso e tipo de assinatura demonstraram correlação fraca.
-
+- Variáveis como idade, dias_atraso e meses_ultima_interacao apresentaram correlações moderadas com a variável alvo, enquanto sexo, frequencia_uso e tipo_assinatura demonstraram correlação fraca.
 
 ## 🤖 Modelagem
 
